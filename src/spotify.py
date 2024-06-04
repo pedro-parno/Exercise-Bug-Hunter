@@ -86,7 +86,7 @@ def main(file_path) -> int:
     cli_args = sys.argv[1:]
     if not cli_args:
         print(get_command_help(file_path))
-        return 0
+        return 1
 
     data = read_csv(file_path)
 
